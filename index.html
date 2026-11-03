@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmos | Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <main class="weather-app">
+    <header class="app-header">
+        <a class="logo" href="#">Atmos<span>.</span></a>
+    <p class="header-note">Your Little Window To The Weather.</p>
+    </header>
+<section class="search-section" aria-label="search-weather">
+    <form id="search-form">
+        <label class="visually-hidden" for="city-input">Enter city name</label>
+        <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Search a city..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="search-btn">Search</button>
+    </form>
+     <p id="status-message" role="status" aria-live="polite">
+                </p>
+</section>
+<section id="current-weather" aria-label="current weather">
+    <p class="welcome-message">Your weather story starts here.</p>
+</section>
+<section id="forcast-section" aria-label="forecast section">
+    <h2>Next 7 Days</h2>
+    <div id="forecast-list"></div>
+</section>
+<footer>
+    <p>Made with care by Atmos.</p>
+</footer>
+</main>
+</body>
+</html>
